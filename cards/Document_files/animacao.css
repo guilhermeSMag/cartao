@@ -1,0 +1,35 @@
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+    background: url(./img/parque.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo {
+    top: 20px;
+    left: 300px;
+    font-size: 4rem;
+    position: absolute;
+    color: blue;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: grey;
+}
+
+.corredor1 {
+    background: url(./img/correr1.png);
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    width: calc(636px / 8);
+    height: 99px;
+    overflow: hidden;
+    animation: correr 1s steps(8) infinite;
+}
+
+@keyframes correr {
+    0% {background-position: 0px;}
+    100% {background-position: -636px;}
+}
